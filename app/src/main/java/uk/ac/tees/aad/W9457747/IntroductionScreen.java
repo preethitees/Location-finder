@@ -22,4 +22,10 @@ public class IntroductionScreen extends AppCompatActivity {
             }
         },2000);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        finishAffinity();
+    }
 }
