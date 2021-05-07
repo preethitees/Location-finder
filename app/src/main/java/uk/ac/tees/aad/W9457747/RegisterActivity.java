@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +18,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -44,6 +47,18 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if(email.getText().toString().isEmpty()){
+                    email.findFocus();
+                    email.setError("enter value");
+                }
+                if(!Patterns.EMAIL_ADDRESS.matcher(email.getText().toString()).matches())
+                {
+                    email.findFocus();
+                    email.setError("correct value");
+
+                }
+
                 progressBar.setVisibility(View.VISIBLE);
                 firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(),password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
@@ -58,8 +73,6 @@ public class RegisterActivity extends AppCompatActivity {
                 });
             }
         });
-
-
     }
 
     @Override
