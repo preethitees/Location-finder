@@ -32,9 +32,5 @@ public class ListOFAvalilablity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finishAffinity();
-    }
+
 }

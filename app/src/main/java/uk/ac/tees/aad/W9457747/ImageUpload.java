@@ -29,6 +29,7 @@ import com.google.mlkit.vision.label.defaults.ImageLabelerOptions;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ImageUpload extends AppCompatActivity {
 
     private static int CAMERA_UNIC_CODE = 145;
@@ -37,6 +38,8 @@ public class ImageUpload extends AppCompatActivity {
     Button find;
     Bitmap bitmap;
     FirebaseAuth firebaseAuth;
+
+
 
 
     ArrayList<Places> places;
@@ -55,6 +58,15 @@ public class ImageUpload extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findLabel();
+            }
+        });
+
+        Button btnn = findViewById(R.id.buttonLogout);
+        btnn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firebaseAuth.signOut();
+                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             }
         });
 
