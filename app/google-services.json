@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "610256047664",
+    "project_id": "location-finder-4c3de",
+    "storage_bucket": "location-finder-4c3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610256047664:android:bd8496b8e569420074e7f5",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.aad.W9457747"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610256047664-4cihrtj84ocmb35jcnakeaooa92mo4hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYZfDwWXEpK4zFzEuevj3EW5vsKUIr4fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610256047664-4cihrtj84ocmb35jcnakeaooa92mo4hg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

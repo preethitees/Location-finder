@@ -2,5 +2,12 @@
     <string name="app_name">Places Finder</string>
     <string name="textview">TextView</string>
     <string name="todo">TODO</string>
-    <string name="find_out_the_locations_based_on_ai_search">Find out the locations based on AI Search</string>
+    <string name="find_out_the_locations_based_on_ai_search">Find out the location in the images based on AI Search</string>
+    <string name="login">Login</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="register">Register</string>
+    <string name="upload">Upload</string>
+    <string name="find_place">Find Place</string>
 </resources>
