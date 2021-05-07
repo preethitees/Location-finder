@@ -12,6 +12,7 @@ public class ListOFAvalilablity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // List to get the values
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_ofavalilablity);
 
